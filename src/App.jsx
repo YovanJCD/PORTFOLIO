@@ -1,19 +1,22 @@
-import HeroSection from './components/HeroSection';
-import GallerySection from './components/GallerySection';
-import MeasuresSection from './components/MeasuresSection';
-import SocialSection from './components/SocialSection';
-import ContactSection from './components/ContactSection';
-import './App.css';
+import React from "react";
+import Hero from "./components/Hero";
+import Measures from "./components/Measures";
+import Gallery from "./components/Gallery";
+import Socials from "./components/Socials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <HeroSection />
-      <GallerySection />
-      <MeasuresSection />
-      <SocialSection />
-      <ContactSection />
-    </>
+    <div className="App">
+      <Hero />
+      <Measures />
+      <Gallery />
+      <Socials />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

@@ -1,0 +1,33 @@
+.measures-section {
+  background: #181818;
+  color: #fff;
+  padding: 3rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.measures-content {
+  max-width: 400px;
+  width: 100%;
+  background: #222;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+.measures-content h2 {
+  margin-bottom: 1.2rem;
+  color: #e0b973;
+  font-size: 1.4rem;
+}
+.measures-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.measures-content li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+.measures-content span {
+  font-weight: 600;
+  color: #e0b973;
+}
