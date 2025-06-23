@@ -1,26 +1,44 @@
 .social-section {
-  background: #f8fafc;
-  padding: 2rem 0 1.5rem 0;
+  background: #181818;
+  color: #fff;
+  padding: 2.5rem 0 2rem 0;
   text-align: center;
 }
 
 .social-section h2 {
-  color: #22223b;
-  margin-bottom: 1rem;
+  color: #bfa14a;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
+  flex-wrap: wrap;
 }
 
-.social-links a {
-  font-size: 2.2rem;
-  color: #4a4e69;
-  transition: color 0.2s;
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #222;
+  color: #fff;
+  border: 2px solid #bfa14a44;
+  border-radius: 8px;
+  padding: 0.7rem 1.3rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: border 0.2s, color 0.2s;
 }
 
-.social-links a:hover {
-  color: #22223b;
+.social-icon.instagram:hover {
+  color: #bfa14a;
+  border-color: #bfa14a;
+}
+
+.social-icon.whatsapp:hover {
+  color: #25d366;
+  border-color: #25d366;
 }

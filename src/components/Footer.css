@@ -1,8 +1,21 @@
 .footer {
-  background: #111;
-  color: #e0b973;
+  background: #181818;
+  color: #bfa14a;
   text-align: center;
-  padding: 1.2rem 0 1rem 0;
+  padding: 1.5rem 0 1rem 0;
   font-size: 1rem;
-  letter-spacing: 0.5px;
+  border-top: 1px solid #bfa14a22;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer a {
+  color: #bfa14a;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #fff;
 }

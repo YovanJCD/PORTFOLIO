@@ -1,26 +1,31 @@
-import React from 'react';
-import './HeroSection.css';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Box, Heading, Text, Image, VStack } from "@chakra-ui/react";
+import AnimatedSection from "./AnimatedSection";
+import heroImg from "../assets/example-hero.jpg";
 
 const HeroSection = () => (
-  <section className="hero-section">
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className="hero-content"
-    >
-      <img
-        src="/assets/model-placeholder.jpg"
-        alt="Modelo principal"
-        className="hero-photo"
+  <AnimatedSection>
+    <VStack spacing={6} align="center" py={{ base: 10, md: 16 }}>
+      <Image
+        src={heroImg}
+        alt="Yován Castro"
+        borderRadius="full"
+        boxSize={{ base: "120px", md: "180px" }}
+        border="4px solid #111"
+        boxShadow="lg"
+        objectFit="cover"
       />
-      <div className="hero-text">
-        <h1>Tu Nombre</h1>
-        <p>Modelo profesional | Fashion | Editorial | Comercial</p>
-      </div>
-    </motion.div>
-  </section>
+      <Box textAlign={{ base: "center", md: "center" }}>
+        <Heading as="h1" size={{ base: "lg", md: "2xl" }} fontWeight="bold">
+          Yován Castro
+        </Heading>
+        <Text fontSize={{ base: "md", md: "xl" }} color="gray.600">
+          Modelo Profesional
+        </Text>
+        <Text color="gray.500">Madrid, España</Text>
+      </Box>
+    </VStack>
+  </AnimatedSection>
 );
 
 export default HeroSection;
