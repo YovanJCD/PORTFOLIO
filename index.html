@@ -31,10 +31,19 @@
     <meta name="msapplication-TileImage" content="/PORTFOLIO/assets/ms-icon-144x144-C7hQD42H.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/x-icon" href="/PORTFOLIO/assets/favicon-W3gtzaI1.ico" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: fonts.googleapis.com fonts.gstatic.com *.instagram.com static.cdninstagram.com *.fbcdn.net *.facebook.com https:; style-src 'self' 'unsafe-inline' fonts.googleapis.com; frame-src https://www.instagram.com https://*.instagram.com;">
+    <!-- Elimina directivas Permissions-Policy no soportadas -->
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=()">
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com data:;
+        frame-src https://www.instagram.com https://*.instagram.com;
+        script-src 'self' 'unsafe-eval';
+      ">
     <!-- Eliminadas directivas Permissions-Policy obsoletas -->
-    <script type="module" crossorigin src="/PORTFOLIO/assets/index-QcRQKFJ-.js"></script>
-    <link rel="stylesheet" crossorigin href="/PORTFOLIO/assets/index-C1iA1stY.css">
+    <script type="module" crossorigin src="/PORTFOLIO/assets/index-BEasHvGy.js"></script>
+    <link rel="stylesheet" crossorigin href="/PORTFOLIO/assets/index-C6ySzFjD.css">
   </head>
   <body>
     <div id="root"></div>
